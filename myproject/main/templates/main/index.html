@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Django Demo</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Talk to Backend</h1>
+    <input type="text" id="userInput" placeholder="Type something...">
+    <button onclick="sendData()">Send</button>
+    <p id="response"></p>
+  </div>
+  <script src="{% static 'main/script.js' %}"></script>
+</body>
+</html>
